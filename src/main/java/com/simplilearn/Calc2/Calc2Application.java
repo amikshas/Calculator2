@@ -9,5 +9,10 @@ public class Calc2Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Calc2Application.class, args);
 	}
+	
+	@RequestMapping(value = "/")
+   public String hello() {
+      return "Hello World from Tomcat";
+   }
 
 }
